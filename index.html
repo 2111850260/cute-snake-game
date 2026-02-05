@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萌萌贪吃蛇 Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🍬 萌萌贪吃蛇 🍬</h1>
+            <div class="score-board">
+                <span>得分: <span id="score">0</span></span>
+                <span>最高分: <span id="high-score">0</span></span>
+            </div>
+        </div>
+        
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="game-overlay" class="overlay">
+                <div class="message">
+                    <h2 id="overlay-title">准备好了吗？</h2>
+                    <p>按方向键或点击开始</p>
+                    <button id="start-btn">开始游戏</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-row">
+                <button class="d-pad" id="up-btn">⬆️</button>
+            </div>
+            <div class="control-row">
+                <button class="d-pad" id="left-btn">⬅️</button>
+                <button class="d-pad" id="down-btn">⬇️</button>
+                <button class="d-pad" id="right-btn">➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
